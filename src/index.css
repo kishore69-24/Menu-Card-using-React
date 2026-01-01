@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(120deg, #b0b6f7 0%, #6e8efb 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.mainhead {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(90deg, #6e8efb 0%, #a777e3 100%);
+  height: 70px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 70px;
+  border-radius: 0 0 22px 22px;
+  box-shadow: 0 4px 16px #6e8efb55;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 12px #6e8efb80;
+}
+
+.mainParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  margin-top: 30px;
+}
+
+.recipe-container {
+  background: linear-gradient(135deg, #e3e6fd 0%, #f5eaff 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(110, 142, 251, 0.18), 0 2px 8px #b8c6db;
+  width: 350px;
+  overflow: hidden;
+  border: 2px solid #e0eafc;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.recipe-container:hover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: 0 20px 40px rgba(110, 142, 251, 0.22), 0 2px 8px #b8c6db;
+}
+
+.recipe-header {
+  background: linear-gradient(135deg, #a7bfe8 10%, #f3f8ff 90%);
+  color: #3b4252;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  text-align: center;
+  border-bottom: 2px solid #e0eafc;
+  box-shadow: 0 2px 8px #b8c6db40;
+}
+.recipe-header h2 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 8px #b8c6db40;
+}
+.recipe-header p {
+  font-size: 1rem;
+  opacity: 0.95;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.recipe-details {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #f3f8ff 60%, #e0eafc 100%);
+  border-radius: 12px;
+  margin: 0 1rem;
+  box-shadow: 0 2px 8px #b8c6db22;
+}
+.recipe-details p {
+  color: #6b7280;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #e9edfb;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  display: inline-block;
+  transition: color 0.2s, background 0.2s;
+}
+.recipe-details p:hover {
+  color: #3b4252;
+  background: #dbeafe;
+}
+
+.foodimg {
+  height: 90px;
+  width: 90px;
+  border-radius: 14px;
+  border: 2px solid #e0eafc;
+  box-shadow: 0 2px 8px #b8c6db44;
+  object-fit: cover;
+  background: #f3f8ff;
+  transition: transform 0.2s;
+}
+.foodimg:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 24px #b8c6db99;
+}
